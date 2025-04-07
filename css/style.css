@@ -1,0 +1,601 @@
+/* header */
+.header {
+  position: relative;
+  width: 1000px;
+  height: 60px;
+  margin: 0px auto;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  z-index: 5;
+}
+.header-wrap {
+  width: 1000px;
+  height: 60px;
+  display: flex;
+  gap: 10px;
+}
+.fix {
+  position: fixed;
+  width: 1000px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding-right: 10px;
+}
+.blank {
+  width: 1000px;
+  height: 60px;
+  background-color: #202020;
+}
+.logo {
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+.header-navi ul {
+  display: flex;
+}
+.header-navi ul li {
+  position: relative;
+}
+.header-navi ul li a {
+  position: relative;
+  width: 100px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Gowun Batang", "Gowun+Dodum";
+}
+
+.header-navi ul li a:hover {
+  transition: 0.5s;
+  color: #a9c345;
+}
+.icon {
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.icon a {
+  width: 40px;
+  line-height: 60px;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.icon a.kakao {
+  width: 40px;
+  line-height: 60px;
+  text-align: center;
+  display: block;
+  background: url(../footage/카카오톡-카카오채널-아이콘.png) center no-repeat;
+  background-size: contain;
+}
+.icon a.kakao:hover {
+  width: 40px;
+  line-height: 60px;
+  text-align: center;
+  display: block;
+  transition: 0.3s;
+  background: url(../footage/카카오톡-카카오채널-아이콘-colored.png) center
+    no-repeat;
+  background-size: contain;
+}
+.icon a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+.icon a:hover i {
+  transition: 0.3s;
+  color: red;
+}
+/* 자기소개 */
+#introduce {
+  /* position: absolute; */
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 50px;
+  width: 1100px;
+  height: 400px;
+  background-color: #d3df96;
+  margin: 0 auto;
+  /* top: 60px;
+  /* transform: translate(-50%, -50%); */
+  left: -50px;
+  visibility: hidden;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  cursor: pointer;
+}
+#introduce img {
+  position: absolute;
+  border-radius: 50px;
+  width: 1100px;
+  height: 400px;
+  object-fit: cover;
+  margin: 0 auto;
+  filter: saturate(0.8);
+}
+.intro-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+  width: 500px;
+  /* height: 50%; */
+  margin-right: 70px;
+}
+.intro-text-box h3 {
+  font-family: "Gowun Batang", "Gowun+Dodum";
+  /* font-family: "Noto Sans KR", "Pretendard", sans-serif; */
+  font-weight: 100;
+  font-size: 30px;
+  color: #e2e2e2;
+}
+.intro-text-box p {
+  font-family: "Gowun Batang", "Gowun+Dodum";
+  /* font-family: "Noto Sans KR", "Pretendard", sans-serif; */
+  font-weight: 100;
+  font-size: 16px;
+  color: #e2e2e2;
+  line-height: 25px;
+}
+/* slide @@@@@@@@@@@@@@@@@@@*/
+
+.thumnail {
+  position: relative;
+  width: 1000px;
+  height: 400px;
+  /* margin: 0px auto; */
+  /* overflow: hidden; */
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #9fff97e8; /* 활성 상태 색 */
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 1000px;
+  height: 400px;
+  display: flex;
+}
+.swiper-slide {
+  width: 1000px;
+  height: 400px;
+  position: relative;
+}
+.swiper-slide > a {
+  width: 1000px;
+  height: 400px;
+}
+.swiper-slide a img {
+  width: 1000px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.swiper-slide .text-box {
+  position: absolute;
+  bottom: 200px;
+  width: 800px;
+  margin-left: 30px;
+  font-family: "Gowun Batang", "Gowun+Dodum";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-box h1 {
+  font-weight: 500;
+  color: #f5f5f5;
+  /* opacity: 0.8; */
+  text-shadow: #383838;
+}
+.text-box p {
+  color: #f5f5f5;
+}
+/* media 섹션@@@@@@@@@@@@@@@@@@@@@@@@@ */
+#media {
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.media-navi {
+  position: relative;
+  width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  /* padding-left: ; */
+  /* background-color: #a9c345; */
+  gap: 20px;
+  font-family: "Gowun Batang";
+  padding-left: 10px;
+}
+
+#media .media-navi > li {
+  width: 150px;
+  line-height: 50px;
+  /* text-align: center; */
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#media .media-navi > li > span {
+  position: relative;
+}
+#media .media-navi > li > span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  opacity: 0.4;
+  height: 10px;
+  background-color: #a9c345;
+  transition: width 0.4s ease-in;
+}
+#media .media-navi > li > span:hover::after {
+  width: 100%;
+}
+#media .media-navi > li > span.active::after {
+  width: 100%; /* 클릭 시 선이 끝까지 늘어남 */
+}
+/* card*/
+#media .card-wrap {
+  /* width: 100%; */
+  height: 380px;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  display: none;
+}
+#media .media-navi li.active > div {
+  display: block;
+}
+#media .swiper-wrapper {
+  width: 1000px;
+  height: 380px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 15px;
+}
+#media .swiper-slide {
+  max-width: 320px;
+  min-width: 320px;
+  width: 320px;
+  height: 380px;
+  /* padding: 10px 0; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+}
+#media .swiper-slide img {
+  position: relative;
+  width: 320px;
+  height: 200px;
+  z-index: 1;
+  object-fit: cover;
+  /* display: none; */
+}
+#media .swiper-slide:hover img {
+  opacity: 0;
+  transition: 0.5s;
+  /* display: none; */
+  z-index: 0;
+}
+#media .swiper-slide video {
+  position: absolute;
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+  padding: 1.5px;
+}
+#media .swiper-slide a {
+  position: absolute;
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+  padding: 1.5px;
+}
+/* 무빙포스터 */
+#media ul li:nth-child(4) a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#media ul li:nth-child(4) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#media ul li:nth-child(4) video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#media .text-wrap {
+  width: 320px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans KR", "Pretendard", sans-serif;
+}
+#media .text-wrap > p {
+  width: 100%;
+  height: 110px;
+  font-size: 14px;
+  line-height: 1.23;
+  font-weight: 300;
+  color: #313131;
+  font-family: "Noto Sans KR", "Pretendard", sans-serif;
+}
+#media .text-wrap h2 {
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  gap: 8px;
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: 19px;
+}
+#media .text-wrap h3 {
+  font-weight: 400;
+  color: #202020;
+  line-height: 40px;
+  /* display: flex;
+   align-items: flex-end; */
+  padding-bottom: 5px;
+}
+#media .text-wrap > h2 > p {
+  font-size: 13px;
+  text-align: center;
+  line-height: 1;
+  opacity: 0.6;
+}
+#media .text-wrap br {
+  display: none;
+}
+
+/* shoot 섹션@@@@@@@@@@@@@@@@@@ */
+#shoot {
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #c9c7c7;
+  margin-bottom: 30px;
+}
+
+.media-navi {
+  width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  /* padding-left: ; */
+  /* background-color: #a9c345; */
+  gap: 20px;
+  font-family: "Gowun Batang";
+  padding-left: 10px;
+}
+#shoot .media-navi > li {
+  width: 150px;
+  line-height: 50px;
+  /* text-align: center; */
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#shoot .media-navi > li > span {
+  position: relative;
+}
+#shoot .media-navi > li > span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  opacity: 0.6;
+  height: 10px;
+  background-color: #d3df96;
+  transition: width 0.3s ease-in;
+}
+#shoot .media-navi > li > span:hover::after {
+  width: 100%;
+}
+#shoot .media-navi > li > span.active::after {
+  width: 100%; /* 클릭 시 선이 끝까지 늘어남 */
+}
+/* card */
+#shoot .card-wrap {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  display: none;
+}
+#shoot .media-navi li.active > div {
+  display: block;
+}
+#shoot .swiper-wrapper {
+  width: 1000px;
+  height: 380px;
+  display: flex;
+
+  gap: 15px;
+}
+#shoot .swiper-slide {
+  max-width: 320px;
+  min-width: 320px;
+  width: 320px;
+  height: 380px;
+  /* padding: 10px 0; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+}
+#shoot .swiper-slide img {
+  position: relative;
+  width: 320px;
+  height: 200px;
+  z-index: 1;
+  object-fit: cover;
+  /* display: none; */
+}
+#shoot .swiper-slide:hover img {
+  opacity: 0;
+  transition: 0.5s;
+  /* display: none; */
+  z-index: 0;
+}
+#shoot .swiper-slide video {
+  position: absolute;
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+}
+#shoot .swiper-slide a {
+  position: absolute;
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+}
+#shoot .text-wrap {
+  width: 320px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans KR", "Pretendard", sans-serif;
+}
+#shoot .text-wrap > p {
+  width: 100%;
+  height: 110px;
+  font-size: 14px;
+  line-height: 1.23;
+  font-weight: 300;
+  color: #313131;
+  font-family: "Noto Sans KR", "Pretendard", sans-serif;
+}
+#shoot .text-wrap h2 {
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  gap: 8px;
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: 19px;
+}
+#shoot .text-wrap h3 {
+  font-weight: 400;
+  color: #202020;
+  line-height: 40px;
+  /* display: flex;
+   align-items: flex-end; */
+  padding-bottom: 5px;
+}
+#shoot .text-wrap > h2 > p {
+  font-size: 13px;
+  text-align: center;
+  line-height: 1;
+  opacity: 0.6;
+}
+#shoot .text-wrap br {
+  display: none;
+}
+
+/* project */
+#project {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 70px;
+  border-top: 1px solid #e6e6e6;
+  justify-self: center;
+}
+.project-wrap {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  background-color: #f0f5df;
+  border-radius: 20px;
+  padding: 40px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 85px;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: height 0.5s ease-in;
+}
+
+.project-wrap.show-more {
+  height: 100%;
+  transition: height 0.5s ease-out;
+}
+.project-wrap a {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  /* margin: 0 30px; */
+}
+
+.project-wrap a img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* x-offset, y-offset, blur-radius, color */
+  transition: 0.3s ease;
+}
+.project-wrap a span {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Noto Sans KR", "Pretendard", sans-serif;
+  color: #333333;
+  opacity: 0.9;
+}
+.project-wrap a:hover {
+  /* opacity: 0.7; */
+  filter: saturate(1.5);
+  box-shadow: none;
+}
+button {
+  width: 100%;
+
+  border: none; /* 기본 테두리 제거 */
+  outline: none; /* 클릭 시 생기는 포커스 효과 제거 */
+  cursor: pointer; /* 마우스 올렸을 때 클릭 가능하도록 변경 */
+  background: none;
+  padding: 10px 15px;
+}
